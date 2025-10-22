@@ -3,23 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student ID Card</title>
   <link rel="stylesheet" href="styles.css">
+  <title>Student Admit Card</title>
 </head>
 <body>
-  <div class="student_id">
 
+  <div class="student_id" id="admitCard">
     <div class="top_section">
       <div class="profile_photo">
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg/220px-Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg" alt="Profile Photo">
+        <img id="photo" src="" alt="Profile Photo">
       </div>
       <div class="student_name">
         <ul class="student_info">
-
-          <li class="name">John Doe</li>
-
-          <li class="age"><span class="bold">Age: 20</span></li>
+          <li id="name" class="name">Name: </li>
+          <li id="age" class="age">Age: </li>
         </ul>
       </div>
     </div>
@@ -27,16 +24,16 @@
     <div class="bottom_section">
       <div class="student_details">
         <ul>
-
-          <li><span class="bold">ID:</span> 525710</li>
-
-          <li><span class="bold">Course:</span> Full Stack Software Development</li>
-
-          <li><span class="bold">Class:</span> Bootcamp</li>
+          <li id="studentId"><p class="bold">ID:</p> </li>
+          <li id="course"><p class="bold">Course:</p> </li>
+          <li id="class"><p class="bold">Class:</p> </li>
         </ul>
       </div>
     </div>
   </div>
-</body>
-</html>
 
+  <button onclick="generateAdmitCard()">Enter Details</button>
+
+</body>
+<script src="app.js"></script>
+</html>

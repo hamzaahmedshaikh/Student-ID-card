@@ -1,93 +1,60 @@
 body {
-    font-family: Verdana, sans-serif;
-    background-color: #6fb9b9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .student_id {
-    width: 520px;
-    background-color: #fff;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 1px 0px 0px #a9a39e, 0px 1px 0px #a9a39e,
-        2px 1px 0px #a9a39e, 1px 2px 0px #a9a39e,
-        3px 2px 0px #958b83, 2px 3px 0px #958b83,
-        4px 3px 0px #93867c, 3px 4px 0px #93867c,
-        5px 4px 0px #93867c, 4px 5px 0px #93867c;
-}
-
-.top_section {
-    padding: 30px;
-    background: linear-gradient(to right, #e84610, #ffffff);
-    color: white;
-}
-
-
-.profile_photo {
-    flex-shrink: 0;/
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  display: none;
 }
 
 .profile_photo img {
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-
-.student_name {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.top_section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.student_info {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.student_name ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-
-.student_info .name {
-    font-size: 1.5em;
-    font-weight: bold;
+.bold {
+  font-weight: bold;
 }
 
-
-.student_info .age {
-    font-size: 1.1em;
-    margin-top: 5px;
+.bottom_section ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
-
-.bottom_section {
-    padding: 30px;
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: burlywood;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.student_details {
-    margin-top: 10px;
-}
-
-.student_details ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.student_details li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #555;
-}
-
-span {
-    font-weight: bold;
+button:hover {
+  background-color: peru;
 }
